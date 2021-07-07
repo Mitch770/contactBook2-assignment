@@ -1,4 +1,4 @@
-require_relative 'contact'
+require_relative 'contact.rb'
 class CRM
 
   def initialize(name_being_passed_in)
@@ -50,10 +50,10 @@ class CRM
     note = gets.chomp
 
     contact = Contact.create(
-      first_name: "John",
-      last_name:  "Smith",
-      email:      "johnsmith@gmail.com",
-      note:       "Hello World!"
+      first_name: first_name,
+      last_name:  last_name,
+      email:      email,
+      note:       note
     )
   end
 
